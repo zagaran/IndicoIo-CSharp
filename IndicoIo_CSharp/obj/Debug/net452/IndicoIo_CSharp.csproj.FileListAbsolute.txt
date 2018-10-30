@@ -1,0 +1,10 @@
+C:\Users\Sean\source\repos\IndicoIo_CSharp\IndicoIo_CSharp\bin\Debug\net452\IndicoIo_CSharp.dll
+C:\Users\Sean\source\repos\IndicoIo_CSharp\IndicoIo_CSharp\obj\Debug\net452\IndicoIo_CSharp.csprojAssemblyReference.cache
+C:\Users\Sean\source\repos\IndicoIo_CSharp\IndicoIo_CSharp\obj\Debug\net452\IndicoIo_CSharp.csproj.CoreCompileInputs.cache
+C:\Users\Sean\source\repos\IndicoIo_CSharp\IndicoIo_CSharp\obj\Debug\net452\IndicoIo_CSharp.AssemblyInfo.cs
+C:\Users\Sean\source\repos\IndicoIo_CSharp\IndicoIo_CSharp\bin\Debug\net452\IndicoIo_CSharp.pdb
+C:\Users\Sean\source\repos\IndicoIo_CSharp\IndicoIo_CSharp\bin\Debug\net452\RestSharp.dll
+C:\Users\Sean\source\repos\IndicoIo_CSharp\IndicoIo_CSharp\obj\Debug\net452\IndicoIo_CSharp.csproj.CopyComplete
+C:\Users\Sean\source\repos\IndicoIo_CSharp\IndicoIo_CSharp\obj\Debug\net452\IndicoIo_CSharp.dll
+C:\Users\Sean\source\repos\IndicoIo_CSharp\IndicoIo_CSharp\obj\Debug\net452\IndicoIo_CSharp.pdb
+C:\Users\Sean\source\repos\IndicoIo_CSharp\IndicoIo_CSharp\bin\Debug\net452\Newtonsoft.Json.dll

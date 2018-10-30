@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndicoIo_CSharp", "IndicoIo_CSharp\IndicoIo_CSharp.csproj", "{326E0E79-8DFA-4EA3-A70A-AEF9644F8D3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndicoIo_test", "IndicoIo_test\IndicoIo_test.csproj", "{DACF2330-3962-431A-8AE1-3028D1387958}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{326E0E79-8DFA-4EA3-A70A-AEF9644F8D3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{326E0E79-8DFA-4EA3-A70A-AEF9644F8D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{326E0E79-8DFA-4EA3-A70A-AEF9644F8D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{326E0E79-8DFA-4EA3-A70A-AEF9644F8D3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DACF2330-3962-431A-8AE1-3028D1387958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DACF2330-3962-431A-8AE1-3028D1387958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DACF2330-3962-431A-8AE1-3028D1387958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DACF2330-3962-431A-8AE1-3028D1387958}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13AF4A50-DA41-4C9C-AF5C-723CF0F2C80E}
+	EndGlobalSection
+EndGlobal

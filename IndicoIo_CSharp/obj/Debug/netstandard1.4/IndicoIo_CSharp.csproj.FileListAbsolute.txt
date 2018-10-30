@@ -1,0 +1,8 @@
+C:\Users\Sean\source\repos\IndicoIo_CSharp\IndicoIo_CSharp\bin\Debug\netstandard1.4\IndicoIo_CSharp.deps.json
+C:\Users\Sean\source\repos\IndicoIo_CSharp\IndicoIo_CSharp\obj\Debug\netstandard1.4\IndicoIo_CSharp.csprojAssemblyReference.cache
+C:\Users\Sean\source\repos\IndicoIo_CSharp\IndicoIo_CSharp\obj\Debug\netstandard1.4\IndicoIo_CSharp.csproj.CoreCompileInputs.cache
+C:\Users\Sean\source\repos\IndicoIo_CSharp\IndicoIo_CSharp\obj\Debug\netstandard1.4\IndicoIo_CSharp.AssemblyInfo.cs
+C:\Users\Sean\source\repos\IndicoIo_CSharp\IndicoIo_CSharp\bin\Debug\netstandard1.4\IndicoIo_CSharp.dll
+C:\Users\Sean\source\repos\IndicoIo_CSharp\IndicoIo_CSharp\bin\Debug\netstandard1.4\IndicoIo_CSharp.pdb
+C:\Users\Sean\source\repos\IndicoIo_CSharp\IndicoIo_CSharp\obj\Debug\netstandard1.4\IndicoIo_CSharp.dll
+C:\Users\Sean\source\repos\IndicoIo_CSharp\IndicoIo_CSharp\obj\Debug\netstandard1.4\IndicoIo_CSharp.pdb
