@@ -41,14 +41,14 @@ namespace IndicoIo_CSharp
             return uuids.Zip(apiResults, (k, v) => new { k, v }).ToDictionary(x => x.k, x => x.v);
         }
 
-        private JToken CustomCall(string method, string data, Dictionary<string, dynamic> config = null)
+        private JToken CustomCall(string method, string data, Dictionary<string, object> config = null)
         {
             string processedImage = PreprocessData(data);
 
             JObject results = BaseCall("custom", processedImage, false, method, config);
             return results["results"];
         }
-        private List<JToken> CustomCall(string method, List<string> data, Dictionary<string, dynamic> config = null)
+        private List<JToken> CustomCall(string method, List<string> data, Dictionary<string, object> config = null)
         {
             List<string> processedImages = PreprocessData(data);
             JObject results = BaseCall("custom", processedImages, true, method, config);

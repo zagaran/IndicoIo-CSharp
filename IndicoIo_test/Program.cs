@@ -11,6 +11,8 @@ namespace IndicoIo_test
 {
     class Program
     {
+
+
         static void Main(string[] args)
         {
             TestKeys();
@@ -25,30 +27,40 @@ namespace IndicoIo_test
 
         public static void TestKeys()
         {
-            Custom c = new Custom("b2d7d3e624d26ca8d163e1de0c8c4393");
-            var data = c.Predict(@"..\..\fish.jpg", null);
+            Dictionary<string, object> config = new Dictionary<string, object>
+            {
+                { "collection", "<COLLECTION_ID>" }
+            };
+
+            Custom c = new Custom("<API_KEY>");
+            var data = c.Predict(@"..\..\fish.jpg", config);
             Console.WriteLine(data);
 
-            File.WriteAllText("indicorc", "INDICO_API_KEY=b2d7d3e624d26ca8d163e1de0c8c4393");
+            File.WriteAllText("indicorc", "INDICO_API_KEY=<API_KEY>");
             Custom c2 = new Custom();
-            data = c2.Predict(@"..\..\fish.jpg", null);
+            data = c2.Predict(@"..\..\fish.jpg", config);
             Console.WriteLine(data);
 
             File.Delete("indicorc");
-            Environment.SetEnvironmentVariable("INDICO_API_KEY", "b2d7d3e624d26ca8d163e1de0c8c4393");
+            Environment.SetEnvironmentVariable("INDICO_API_KEY", "<API_KEY>");
             Custom c3 = new Custom();
-            data = c3.Predict(@"..\..\fish.jpg", null);
+            data = c3.Predict(@"..\..\fish.jpg", config);
             Console.WriteLine(data);
         }
 
         public static void TestPredictMethods()
         {
-            Custom c = new Custom("b2d7d3e624d26ca8d163e1de0c8c4393");
-            var data = c.Predict(@"..\..\fish.jpg", null);
+            Dictionary<string, object> config = new Dictionary<string, object>
+            {
+                { "collection", "COLLECTION_ID>" }
+            };
+
+            Custom c = new Custom("<API_KEY>");
+            var data = c.Predict(@"..\..\fish.jpg", config);
             Console.WriteLine(data);
 
             List<string> dataList = new List<string> { @"..\..\fish.jpg", @"..\..\fish.jpg" };
-            var data2 = c.Predict(dataList, null);
+            var data2 = c.Predict(dataList, config);
             var lines2 = data2.Select(kvp => kvp);
             Console.WriteLine(string.Join(", ", lines2));
 
@@ -57,23 +69,28 @@ namespace IndicoIo_test
                 { "abc", @"..\..\fish.jpg" },
                 { "def", @"..\..\fish.jpg" },
             };
-            var data3 = c.Predict(dataDict, null);
+            var data3 = c.Predict(dataDict, config);
             var lines3 = data3.Select(kvp => kvp.Key + ": " + kvp.Value.ToString());
             Console.WriteLine(string.Join(Environment.NewLine, lines3));
         }
 
         public static void TestInputMethods()
         {
-            Custom c = new Custom("b2d7d3e624d26ca8d163e1de0c8c4393");
-            var data = c.Predict(@"..\..\fish.jpg", null);
+            Dictionary<string, object> config = new Dictionary<string, object>
+            {
+                { "collection", "COLLECTION_ID>" }
+            };
+
+            Custom c = new Custom("<API_KEY>");
+            var data = c.Predict(@"..\..\fish.jpg", config);
             Console.WriteLine(data);
 
-            data = c.Predict(@"https://upload.wikimedia.org/wikipedia/commons/3/3d/Latimeria_chalumnae01.jpg", null);
+            data = c.Predict(@"https://upload.wikimedia.org/wikipedia/commons/3/3d/Latimeria_chalumnae01.jpg", config);
             Console.WriteLine(data);
 
             byte[] fileContents = File.ReadAllBytes(@"..\..\fish.jpg");
             string imageData = Convert.ToBase64String(fileContents);
-            data = c.Predict(imageData, null);
+            data = c.Predict(imageData, config);
             Console.WriteLine(data);
         }
     }

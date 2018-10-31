@@ -37,22 +37,22 @@ namespace IndicoIo_CSharp
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
         }
 
-        public JObject BaseCall(string api, object inputData, bool batch, string method, Dictionary<string, dynamic> extraParams = null)
+        public JObject BaseCall(string api, object inputData, bool batch, string method, Dictionary<string, object> config = null)
         {
-            JObject content = DoPost(inputData, api, batch, method, extraParams);
+            JObject content = DoPost(inputData, api, batch, method, config);
             return content;
         }
 
-        private JObject DoPost(object inputData, string api, bool batch, string method, Dictionary<string, dynamic> urlParams = null)
+        private JObject DoPost(object inputData, string api, bool batch, string method, Dictionary<string, object> config = null)
         {
             string req = CreateRequest(api, method, batch);
             RestClient client = new RestClient(PUBLIC_BASE_URL);
             RestRequest request = new RestRequest(req, Method.POST);
 
-            Dictionary<string, dynamic> rawParams = new Dictionary<string, dynamic>();
-            if (urlParams != null)
+            Dictionary<string, object> rawParams = new Dictionary<string, object>();
+            if (config != null)
             {
-                foreach (var val in urlParams)
+                foreach (var val in config)
                 {
                     rawParams[val.Key] = val.Value;
                 }
